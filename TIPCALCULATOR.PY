@@ -8,7 +8,8 @@ tip = int(input("How much tip percentage would you like to give? "))
 #final bill = (percentage + tax + cost of food)
 final_bill = ((tip / 100 * food) + (food * .10) + (food)) 
 #I am rounding since we can only pay up to two decimal points
-#$12.50 as tip for example. Not $12.5843
+#$12.50 as tip for example. Not $12.5013 
+#It is 2 because we are rounding it to two decimal points. So $12.7913 turns into $12.79 or $12.80
 final_bill_total = round(final_bill, 2)
 #You can see it as a normal numerical value here
 print(f"Total bill: ${final_bill_total}")
